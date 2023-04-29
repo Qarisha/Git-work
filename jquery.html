@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<style>
+  
+    
+</style>
+<body>
+    <script>
+        $(document).ready(function(){
+
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+         $("#show").click(function(){
+             $("p").show();
+             $("p").css("color","white");
+             $("p").css("background","green");
+         });
+
+        });
+    </script>
+    <p>
+        If you click the me I will disappear.
+    </p>
+    <input type="submit" value="Hide"name="" id="hide">
+    <input type="submit" value="Show" name="" id="show">
+</body>
+</html>

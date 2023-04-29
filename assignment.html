@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+</head>
+<body>
+    <label>START   :</label>
+    <input type="number" name="" id="num1">
+    <br>
+    <br>
+    <label>STOP:</label>
+    <input type="number" id="num2"><br><br>
+    <input type="button" value="SUBMIT" onclick="some()">
+    <script>
+         function some(){
+         var start = document.getElementById('num1').value;
+         var stop = document.getElementById('num2').value;       
+        for(i=start;i<=stop;i++){
+            for(j=start;j<=i;j++){
+            document.write(j);}
+            document.write("<br>");
+        }
+    }
+    </script>
+</body>
+</html>

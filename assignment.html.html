@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter a First Number</label>
+    <input type="number" name="" id="check">
+    <br>
+    <br>
+    <label for="">Enter a Second Number</label>
+    <input type="number" name="" id="check1">
+    <br>
+    <input type="button" value="submit" onclick="count()">
+    <script>
+        function count(){
+            var a = parseInt(document.getElementById('check').value);
+            var b = parseInt(document.getElementById('check1').value);
+            for(i=a;i<=b;i++)
+            {
+               document.write(i,"<br>"); 
+            }
+        }
+        </script>
+</body>
+</html>

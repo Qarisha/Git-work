@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+    input{
+        padding:10px;
+        border: 2px solid;
+        box-sizing: border-box;
+        font-size: 
+    }
+    span{
+        color:rgba(17, 0, 248, 0.966);
+        background-color: yellow;
+        font-size: 25px; 
+         
+    }
+    h1{
+      background-color: pink;
+      width: 250px;
+     }
+     center{
+         margin-top: 12%;
+     }
+</style>
+<body>
+    <center> 
+        <h1>CALCULATOR JAVASCRIPT</h1>
+        <input type="number" placeholder="ENTER FIRST NUMBER" id="first">
+        <input type="number" placeholder="ENTER SECOND NUMBER" id="second">
+        <br>
+        <br>
+        <button style="color:black;  background-color:rgb(6, 250, 128)" onclick="add()">ADD</button>
+        <button style="color:black;  background-color:rgb(250, 6, 6)" onclick="sub()">SUB</button>
+        <button style="color:black;  background-color:rgb(152, 6, 250)" onclick="multi()">MULTI</button>
+        <button style="color:black;  background-color:rgb(250, 226, 6)" onclick="divi()">DIVI</button>
+        THE RESULT IS:
+        <span id="result"></span>
+    </center>
+    <script>
+        function add(){
+        var a = parseFloat(document.getElementById("first").value);
+        var b = parseFloat(document.getElementById("second").value);
+        document.getElementById("result").innerHTML= a+b;
+        }
+        function sub(){
+        var a = parseFloat(document.getElementById("first").value);
+        var b = parseFloat(document.getElementById("second").value);
+        document.getElementById("result").innerHTML= a-b;
+        }
+        function multi(){
+        var a = parseFloat(document.getElementById("first").value);
+        var b = parseFloat(document.getElementById("second").value);
+        document.getElementById("result").innerHTML= a*b;
+        }
+        function divi(){
+        var a = parseFloat(document.getElementById("first").value);
+        var b = parseFloat(document.getElementById("second").value);
+        document.getElementById("result").innerHTML= a/b;
+        }
+    </script>
+</body>
+</html>

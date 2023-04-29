@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invite</title>
+</head>
+<style>
+    .container{
+        position: relative;
+        width: 20%;
+        height: 20%;
+    }
+    .image{
+        opacity: 1;
+        width: 100%;
+        transition: 0.5s ease;
+    }
+    .middle{
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container:hover .image{
+        opacity: 0.3;
+    }
+    .container:hover .middle{
+        opacity: 1;
+    }
+    .text{
+        background-color:#534caf ;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+    a{ 
+      text-decoration: none;
+    }
+</style>
+<body>
+    <h2>FADE IN A BOX</h2>
+    <div class="container">
+        <img src="image avatar 1.png" alt="avatar" class="image">
+        <div class="middle">
+        <button class="text"><a href="">HELLO</a></button> 
+        </div>
+    </div>
+</body>
+</html>
